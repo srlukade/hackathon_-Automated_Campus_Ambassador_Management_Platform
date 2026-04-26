@@ -1,0 +1,54 @@
+.profile-card { display: flex; flex-direction: column; gap: 20px; }
+
+.profile-top { display: flex; gap: 16px; align-items: flex-start; }
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid #30363d;
+  flex-shrink: 0;
+}
+
+.profile-info h2 { font-size: 20px; font-weight: 700; color: #e6edf3; }
+
+.username {
+  color: #58a6ff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.username:hover { text-decoration: underline; }
+
+.bio { color: #8b949e; font-size: 13px; margin-top: 6px; line-height: 1.5; }
+
+.profile-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 13px;
+  color: #8b949e;
+}
+
+.profile-meta a { color: #58a6ff; text-decoration: none; }
+.profile-meta a:hover { text-decoration: underline; }
+
+.profile-stats {
+  display: flex;
+  gap: 0;
+  border: 1px solid #21262d;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 8px;
+  border-right: 1px solid #21262d;
+}
+.stat:last-child { border-right: none; }
+
+.stat-val { font-size: 20px; font-weight: 700; color: #e6edf3; }
+.stat-label { font-size: 11px; color: #8b949e; margin-top: 2px; text-transform: uppercase; letter-spacing: 0.5px; }

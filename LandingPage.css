@@ -1,0 +1,101 @@
+.landing { min-height: 100vh; }
+
+.landing-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background: #161b22cc;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #21262d;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo { font-size: 20px; font-weight: 800; color: #58a6ff; }
+.nav-actions { display: flex; gap: 12px; }
+
+.hero-section {
+  text-align: center;
+  padding: 100px 20px 80px;
+  background: radial-gradient(ellipse at top, #1f6feb15 0%, transparent 60%);
+}
+
+.hero-badge {
+  display: inline-block;
+  background: #1f6feb22;
+  border: 1px solid #1f6feb55;
+  color: #58a6ff;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.hero-section h1 {
+  font-size: clamp(32px, 5vw, 60px);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  color: #e6edf3;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #58a6ff, #3fb950);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-sub {
+  color: #8b949e;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.hero-ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.hero-btn { padding: 16px 36px; font-size: 16px; border-radius: 10px; }
+
+.features-section {
+  padding: 80px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 12px;
+  padding: 28px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.feature-card:hover { border-color: #58a6ff44; transform: translateY(-4px); }
+
+.feature-icon { font-size: 32px; margin-bottom: 14px; }
+.feature-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: #e6edf3; }
+.feature-card p { font-size: 14px; color: #8b949e; line-height: 1.6; }
+
+.stats-section {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px 40px;
+  background: #161b22;
+  border-top: 1px solid #21262d;
+  flex-wrap: wrap;
+}
+
+.stat-item { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.stat-num { font-size: 36px; font-weight: 800; color: #58a6ff; }
+.stat-lbl { font-size: 13px; color: #8b949e; text-transform: uppercase; letter-spacing: 0.5px; }

@@ -1,0 +1,70 @@
+.org-page { min-height: 100vh; }
+
+.org-content { max-width: 1100px; margin: 0 auto; padding: 32px 20px; display: flex; flex-direction: column; gap: 28px; }
+
+.org-header h2 { font-size: 26px; font-weight: 800; margin-bottom: 6px; }
+.org-header p { color: #8b949e; font-size: 15px; }
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.kpi-card {
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: border-color 0.2s;
+}
+
+.kpi-card:hover { border-color: #58a6ff44; }
+.kpi-icon { font-size: 28px; }
+.kpi-val { font-size: 32px; font-weight: 800; color: #58a6ff; }
+.kpi-lbl { font-size: 12px; color: #8b949e; text-transform: uppercase; letter-spacing: 0.5px; text-align: center; }
+
+.overview-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) { .overview-bottom { grid-template-columns: 1fr; } }
+
+.top-performers h3, .grade-dist h3 { font-size: 15px; font-weight: 700; margin-bottom: 16px; }
+
+.performer-list { display: flex; flex-direction: column; gap: 12px; }
+
+.performer-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  background: #0d1117;
+  border-radius: 8px;
+}
+
+.rank { font-size: 16px; font-weight: 800; color: #8b949e; width: 28px; text-align: center; }
+
+.perf-avatar {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  border: 2px solid #21262d;
+}
+
+.perf-info { flex: 1; display: flex; flex-direction: column; }
+.perf-name { font-size: 14px; font-weight: 600; }
+.perf-college { font-size: 11px; color: #8b949e; }
+.perf-score { font-size: 15px; font-weight: 700; }
+
+.grade-dist { display: flex; flex-direction: column; }
+.grade-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.grade-label { width: 28px; font-size: 13px; font-weight: 700; color: #58a6ff; }
+.grade-bar-wrap { flex: 1; height: 8px; background: #21262d; border-radius: 4px; overflow: hidden; }
+.grade-bar { height: 100%; background: linear-gradient(90deg, #1f6feb, #58a6ff); border-radius: 4px; transition: width 0.8s ease; min-width: 4px; }
+.grade-count { font-size: 12px; color: #8b949e; width: 20px; text-align: right; }

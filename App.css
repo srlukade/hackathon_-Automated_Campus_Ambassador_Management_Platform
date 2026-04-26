@@ -1,0 +1,97 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #161b22; }
+::-webkit-scrollbar-thumb { background: #30363d; border-radius: 3px; }
+
+.card {
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s;
+}
+
+.btn-green { background: #238636; color: #fff; }
+.btn-green:hover { background: #2ea043; transform: translateY(-1px); }
+.btn-blue { background: #1f6feb; color: #fff; }
+.btn-blue:hover { background: #388bfd; transform: translateY(-1px); }
+.btn-outline { background: transparent; color: #e6edf3; border: 1px solid #30363d; }
+.btn-outline:hover { border-color: #58a6ff; color: #58a6ff; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+.page-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: #161b22;
+  border-bottom: 1px solid #21262d;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 18px;
+  font-weight: 800;
+  color: #58a6ff;
+  cursor: pointer;
+}
+
+.nav-tabs { display: flex; gap: 4px; }
+
+.nav-tab {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: #8b949e;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s;
+}
+
+.nav-tab:hover { color: #e6edf3; background: #21262d; }
+.nav-tab.active { color: #58a6ff; background: #1f6feb22; }
+
+.spinner {
+  width: 36px; height: 36px;
+  border: 3px solid #21262d;
+  border-top-color: #58a6ff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.badge-pill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.tag-referral   { background: #1f6feb22; color: #58a6ff; border: 1px solid #1f6feb44; }
+.tag-promotion  { background: #3fb95022; color: #3fb950; border: 1px solid #3fb95044; }
+.tag-content    { background: #d2992222; color: #d29922; border: 1px solid #d2992244; }
+.tag-engagement { background: #bc8cff22; color: #bc8cff; border: 1px solid #bc8cff44; }

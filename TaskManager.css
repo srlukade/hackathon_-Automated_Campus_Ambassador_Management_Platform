@@ -1,0 +1,64 @@
+.task-manager { display: flex; flex-direction: column; gap: 28px; }
+
+.tm-header h2 { font-size: 22px; font-weight: 800; margin-bottom: 4px; }
+.tm-header p { color: #8b949e; font-size: 14px; }
+
+.tm-section h3 { font-size: 15px; font-weight: 700; margin-bottom: 14px; color: #e6edf3; }
+
+.tm-tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.tm-task-card {
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tm-task-top { display: flex; justify-content: space-between; align-items: center; }
+.tm-pts { font-size: 13px; font-weight: 700; color: #3fb950; }
+.tm-task-title { font-size: 13px; font-weight: 600; color: #e6edf3; }
+.tm-task-deadline { font-size: 11px; color: #8b949e; }
+
+.submissions-table {
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.sub-row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 100px 80px;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid #21262d;
+  font-size: 13px;
+  gap: 8px;
+}
+
+.sub-row:last-child { border-bottom: none; }
+
+.sub-head {
+  background: #0d1117;
+  font-size: 11px;
+  font-weight: 600;
+  color: #8b949e;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sub-name { font-weight: 600; }
+.sub-task { color: #8b949e; }
+.sub-proof { color: #58a6ff; text-decoration: none; }
+.sub-proof:hover { text-decoration: underline; }
+
+.sub-status { font-size: 12px; font-weight: 600; }
+.sub-status.approved { color: #3fb950; }
+.sub-status.pending { color: #d29922; }
